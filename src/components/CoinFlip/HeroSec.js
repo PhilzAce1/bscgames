@@ -1,8 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import MetamaskImage from '../../assets/images/mega.png';
 
 function HeroSec(props) {
+  const [bitnumbers, setBitnumbers] = useState(1)
+
+  const addBitnumber = () => {
+    setBitnumbers((val) => val + 1 )
+  }
+  const reduceBitnumber =() => {
+    setBitnumbers(val => val -1 <= 1? 1:val -1 )
+  }
   return (
     <div class="hero-sec">
       <div class="valuesss">
@@ -64,13 +72,14 @@ function HeroSec(props) {
                           class="minus do-min"
                           data-type="minus"
                           data-field="bitnumbers"
+                          onClick={reduceBitnumber}
                         >
                           −
                         </button>
                         <input
                           type="text"
                           name="bitnumbers"
-                          value="1"
+                          value={bitnumbers}
                           size="2"
                           id="input-bitnumbers"
                         />
@@ -78,6 +87,7 @@ function HeroSec(props) {
                           class="plus do-plus"
                           data-type="plus"
                           data-field="bitnumbers"
+                          onClick={addBitnumber}
                         >
                           +
                         </button>
