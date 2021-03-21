@@ -1,0 +1,1 @@
+(function($){$(".ccounter").ccountdown(2018,2,15,'18:00');})(jQuery);

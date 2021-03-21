@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import CoinFlip from './pages/CoinFlip';
+import Faq from './pages/Faq';
+import Home from './pages/Home';
+import RollDice from './pages/RollDice';
+import TwoDice from './pages/TwoDice';
+import Demo from './pages/Demo';
+import ConditionalDesignLib from './components/ConditionalDesignLib';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ConditionalDesignLib>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/coinflip" component={CoinFlip} />
+        <Route path="/rolldice" component={RollDice} />
+        <Route path="/faq" component={Faq} />
+        <Route path="/twodice" component={TwoDice} />
+        <Route path="/demo" component={Demo} />
+      </Switch>
+    </ConditionalDesignLib>
   );
 }
 
