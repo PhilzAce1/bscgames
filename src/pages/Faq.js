@@ -5,9 +5,6 @@ import LogoPNG from '../assets/images/logo.png';
 import PaperPlanePNG from '../assets/images/paper-plane.png';
 
 /**======================Style======================== */
-// import '../assets/css/bootstrap.min.css';
-
-// import '../assets/css/demo_bootstrap.min.css';
 import LanguagesSwitch from '../components/Languages';
 import { Link } from 'react-router-dom';
 export default function Faq() {
@@ -18,9 +15,9 @@ export default function Faq() {
           <div class="row d-flex-mob">
             <div class="col-sm-3 m-auto logo-wrap">
               <div class="logo">
-                <a href="index.html">
+                <Link to="/">
                   <img src={LogoPNG} alt="logo" />
-                </a>
+                </Link>
               </div>
             </div>
             <div class="col-sm-6 menu-wrap">
@@ -44,9 +41,9 @@ export default function Faq() {
                       </Link>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="/faq">
+                      <Link class="nav-link" to="/faq">
                         FAQ &nbsp;&nbsp;<span class="menu-divider">|</span>
-                      </a>
+                      </Link>
                     </li>
                     <li class="nav-item">
                       <a
@@ -178,19 +175,19 @@ export default function Faq() {
                 <h5>Our Games</h5>
                 <ul>
                   <li>
-                    <a href="coin-flip.html">
+                    <Link to="/coinflip">
                       <span class="on-hov">-</span>Coin Flip
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="roll-a-dice.html">
+                    <Link to="/rolldice">
                       <span class="on-hov">-</span>Roll A Dice
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="two-dice.html">
+                    <Link to="/twodice">
                       <span class="on-hov">-</span>Two Dice
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -212,17 +209,17 @@ export default function Faq() {
                 <h5>Featured on</h5>
                 <ul>
                   <li>
-                    <a href="https://stuf.com">
+                    <a href="#github">
                       <span class="on-hov">-</span>Github
                     </a>
                   </li>
                   <li>
-                    <a href="https://stuff.com">
+                    <a href="#link">
                       <span class="on-hov">-</span>State-of-the-DApps
                     </a>
                   </li>
                   <li>
-                    <a href="https://stuff.com">
+                    <a href="#link">
                       <span class="on-hov">-</span>DappRadar
                     </a>
                   </li>

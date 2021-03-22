@@ -1,7 +1,5 @@
 import React from 'react';
 
-import LogoPNG from '../assets/images/logo.png';
-import PaperPNG from '../assets/images/paper-plane.png';
 import DownloadPNG from '../assets/images/download-svg.png';
 import PlayNowPNG from '../assets/images/play_now.svg';
 import LanguageSwitch from '../components/Languages';

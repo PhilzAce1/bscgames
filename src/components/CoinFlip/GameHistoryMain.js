@@ -54,12 +54,12 @@ function GameHistoryMain(props) {
                 </button>
                 <div class="dropdown-menu">
                   <li>
-                    <a class="lang" href="stff.com">
+                    <a class="lang" href="#js">
                       Public
                     </a>
                   </li>
                   <li>
-                    <a class="lang" href="stff.com">
+                    <a class="lang" href="#js">
                       Only me
                     </a>
                   </li>

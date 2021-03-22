@@ -12,7 +12,7 @@ import Supply from '../assets/images/tokenomics.png';
 // import '../assets/css/main_style.css';
 /**=================External Dependencies============================= */
 import Particles from 'react-particles-js';
-
+import { Link } from 'react-router-dom';
 export default function Home() {
   return (
     <div className="home">
@@ -42,9 +42,9 @@ export default function Home() {
             >
               <ul class="nav navbar-nav">
                 <li>
-                  <a class="gold" href="index.html">
+                  <Link class="gold" to="/">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a class="gold" href="https://docs.bscgames.win/">
