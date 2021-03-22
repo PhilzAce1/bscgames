@@ -1,6 +1,7 @@
 import React from 'react';
 
 import LogoPNG from '../../assets/images/logo.png';
+import { Link } from 'react-router-dom';
 
 function Header(props) {
   return (
@@ -9,9 +10,9 @@ function Header(props) {
         <div class="row d-flex-mob">
           <div class="col-sm-3 m-auto logo-wrap">
             <div class="logo">
-              <a href="index.html">
+              <Link to="/">
                 <img src={LogoPNG} alt="bit-logo" />
-              </a>
+              </Link>
             </div>
           </div>
           <div class="col-sm-6 menu-wrap">
@@ -30,14 +31,14 @@ function Header(props) {
               >
                 <ul class="navbar-nav mx-auto">
                   <li class="nav-item">
-                    <a class="nav-link" href="index.html">
+                    <Link class="nav-link" to="/">
                       Games &nbsp;&nbsp;<span class="menu-divider">|</span>
-                    </a>
+                    </Link>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="faq.html">
+                    <Link class="nav-link" to="/faq">
                       FAQ &nbsp;&nbsp;<span class="menu-divider">|</span>
-                    </a>
+                    </Link>
                   </li>
                   <li class="nav-item">
                     <a

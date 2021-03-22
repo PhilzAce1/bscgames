@@ -3,7 +3,7 @@ import Header from '../components/CoinFlip/Header';
 import LanguageSwitch from '../components/Languages';
 import HeroSec from '../components/CoinFlip/HeroSec';
 import GameHistoryMain from '../components/CoinFlip/GameHistoryMain';
-
+import Footer from '../components/Footer';
 
 function CoinFlip(props) {
   return (
@@ -12,6 +12,7 @@ function CoinFlip(props) {
       <LanguageSwitch />
       <HeroSec />
       <GameHistoryMain />
+      <Footer />
     </div>
   );
 }

@@ -11,28 +11,28 @@ import BgdSVG from '../assets/flags/bgd2.svg';
 function Languages(props) {
   return (
     <div class="langblock">
-      <a href="https://stuff.com" class="langwrap langwrap_en">
+      <a href="#en" class="langwrap langwrap_en">
         <img src={EngSVG} alt="" />
       </a>
-      <a href="https://stuff.com" class="langwrap langwrap_fa">
+      <a href="#ir" class="langwrap langwrap_fa">
         <img src={IrnSVG} alt="" />
       </a>
-      <a href="https://stuff.com" class="langwrap langwrap_ru">
+      <a href="#rn" class="langwrap langwrap_ru">
         <img src={RusSVG} alt="" />
       </a>
-      <a href="https://stuff.com" class="langwrap langwrap_zh">
+      <a href="#chi" class="langwrap langwrap_zh">
         <img src={ChiSVG} alt="" />
       </a>
-      <a href="https://stuff.com" class="langwrap langwrap_es">
+      <a href="#esp" class="langwrap langwrap_es">
         <img src={EspSVG} alt="" />
       </a>
-      <a href="https://stuff.com" class="langwrap langwrap_ar">
+      <a href="#ara" class="langwrap langwrap_ar">
         <img src={AraSVG} alt="" />
       </a>
-      <a href="https://stuff.com" class="langwrap langwrap_tr">
+      <a href="#trk" class="langwrap langwrap_tr">
         <img src={TrkSVG} alt="" />
       </a>
-      <a href="https://stuff.com" class="langwrap langwrap_bd">
+      <a href="#bgd" class="langwrap langwrap_bd">
         <img src={BgdSVG} alt="" />
       </a>
     </div>

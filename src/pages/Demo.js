@@ -6,67 +6,15 @@ import DownloadPNG from '../assets/images/download-svg.png';
 import PlayNowPNG from '../assets/images/play_now.svg';
 import LanguageSwitch from '../components/Languages';
 
+import Footer from '../components/Footer';
+import Header from '../components/CoinFlip/Header';
+
 import { Link } from 'react-router-dom';
 function Demo(props) {
   return (
     <div className="demo">
-      {' '}
-      <header>
-        <div class="container">
-          <div class="row d-flex-mob">
-            <div class="col-sm-3 m-auto logo-wrap">
-              <div class="logo">
-                <a href="index.html">
-                  <img src={LogoPNG} alt="bit-logo" />
-                </a>
-              </div>
-            </div>
-            <div class="col-sm-6 menu-wrap">
-              <nav class="navbar navbar-expand-sm navbar-dark">
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#collapsibleNavbar"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div
-                  class="collapse navbar-collapse text-center"
-                  id="collapsibleNavbar"
-                >
-                  <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                      <Link class="nav-link" to="/demo">
-                        Games &nbsp;&nbsp;<span class="menu-divider">|</span>
-                      </Link>
-                    </li>
-                    <li class="nav-item">
-                      <Link class="nav-link" to="/faq">
-                        FAQ &nbsp;&nbsp;<span class="menu-divider">|</span>
-                      </Link>
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link"
-                        href="../cdn-cgi/l/email-protection.html#a4cdcac2cbe4c6d7c7c3c5c9c1d78ad3cdca"
-                      >
-                        Contact
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-            <div class="col-sm-3 text-right m-auto lang-wrap">
-              <a class="mail pr-1" href="https://t.me/bscgameswin">
-                <img src={PaperPNG} alt="paper plane" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </header>
-      <LanguageSwitch />{' '}
+      <Header />
+      <LanguageSwitch />
       <div class="hero-sec">
         <div class="text-center container">
           <h1 className="pb-2 games_white">Fair Games That Pay BSC</h1>
@@ -157,9 +105,9 @@ function Demo(props) {
                   </p>
                 </div>
               </div>
-              <a href="coin-flip.html" class="play-btn">
+              <Link to="/coinflip" class="play-btn">
                 Play Now
-              </a>
+              </Link>
             </div>
             <div
               class="play-c-dice play-col play-col-center d-flex justify-content-between wow fadeInDown"
@@ -180,9 +128,9 @@ function Demo(props) {
                   </p>
                 </div>
               </div>
-              <a href="roll-a-dice.html" class="play-btn">
+              <Link to="/coinflip" class="play-btn">
                 Play Now
-              </a>
+              </Link>
             </div>
             <div
               class="play-t-dice play-col d-flex justify-content-between wow fadeInDown"
@@ -203,107 +151,14 @@ function Demo(props) {
                   </p>
                 </div>
               </div>
-              <a href="two-dice.html" class="play-btn">
+              <Link to="/coinflip" class="play-btn">
                 Play Now
-              </a>
+              </Link>
             </div>
           </div>
         </div>
       </div>
-      <footer>
-        <div class="container-fluid footer-menu-box">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-3 footer-col-list">
-                <h5>Our Games</h5>
-                <ul>
-                  <li>
-                    <a href="coin-flip.html">
-                      <span class="on-hov">-</span>Coin Flip
-                    </a>
-                  </li>
-                  <li>
-                    <a href="roll-a-dice.html">
-                      <span class="on-hov">-</span>Roll A Dice
-                    </a>
-                  </li>
-                  <li>
-                    <a href="two-dice.html">
-                      <span class="on-hov">-</span>Two Dice
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-sm-3 footer-col-list">
-                <h5>Blockchain & Friends</h5>
-                <ul>
-                  <li>
-                    <span class="on-hov">-</span>Your Balance :: 0.00 BSC
-                  </li>
-                  <li>
-                    <span class="on-hov">-</span>Network :: Mainnet
-                  </li>
-                  <li>
-                    <span class="on-hov">-</span>Smart Contract
-                  </li>
-                </ul>
-              </div>
-              <div class="col-sm-3 footer-col-list">
-                <h5>Featured on</h5>
-                <ul>
-                  <li>
-                    <a href="https://stuff.com">
-                      <span class="on-hov">-</span>Github
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://stuff.com">
-                      <span class="on-hov">-</span>State-of-the-DApps
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://stuff.com">
-                      <span class="on-hov">-</span>DappRadar
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-sm-3 footer-col-list">
-                <h5>Reach out to us</h5>
-                <ul>
-                  <li>
-                    <a
-                      href="https://t.me/bscgameswin"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <span class="on-hov">-</span>Telegram
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://twitter.com/bscgameswin"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <span class="on-hov">-</span>Twitter
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../cdn-cgi/l/email-protection.html#01686f676e4163726266606c64722f76686f">
-                      <span class="on-hov">-</span>Email
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="google_translate_element"></div>
-        <div class="container-fluid bottom-footer">
-          <span>2021 BSC Games , All Rights Reserved</span>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
